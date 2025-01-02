@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yatri.in</title>
+    <link rel="shortcut icon" href="Pointer.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="Pointer.png" width="30"><a class="navbar-brand" href="#">Yatri.in</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Bootstrap Tutorial/Project.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Bootstrap Tutorial/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Food</a></li>
+                            <li><a class="dropdown-item" href="#">Hotels</a></li>
+                            <li><a class="dropdown-item" href="#">Swimming Pool</a></li>
+                            <li><a class="dropdown-item" href="#">WiFi</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                            <li><a class="dropdown-item" href="#">Feedback</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Bootstrap Tutorial/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn btn-outline-primary">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</button>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signupmodal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="loginmodalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginmodalLabel">Login to Yatri.in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="signupmodalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupmodalLabel">Get a Yatri.in Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Slide1.jpg" class="d-block w-100" alt="failed to load">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><b>Plan Your Perfect Getaway</b></h5>
+                    <p><b>Simplify your journey with our ultimate travel planner—tailored itineraries, seamless
+                            bookings, and unforgettable experiences await!</b></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Slide2.jpg" class="d-block w-100" alt="failed to load">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><b>Your Travel Companion</b></h5>
+                    <p><b>From destination guides to seamless bookings, we’re here to make your trip effortless and
+                            memorable.</b></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Slide3.jpg" class="d-block w-100" alt="failed to load">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><b>Adventure Starts Here</b></h5>
+                    <p><b>Embark on a journey of a lifetime with expertly crafted travel plans designed just for
+                            you.</b></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div><br>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="Manali.jpg" class="card-img-top" alt="failed to load">
+                <div class="card-body">
+                    <h4 class="card-title">Discover Manali: The Enchanting Gateway to the Himalayas</h4>
+                    <p class="card-text">Nestled in the heart of Himachal Pradesh, Manali is a mesmerizing hill
+                        station
+                        that
+                        promises an unforgettable escape into nature's lap. Surrounded by towering snow-capped
+                        peaks,
+                        lush green
+                        valleys, and a tranquil ambiance, Manali is a paradise for travelers seeking adventure,
+                        serenity, and
+                        culture.</p>
+                    <a href="https://www.google.com/maps/place/Manali,+Himachal+Pradesh/@32.2395067,77.1665201,14z/data=!3m1!4b1!4m6!3m5!1s0x39048708163fd03f:0x8129a80ebe5076cd!8m2!3d32.2431872!4d77.1891761!16zL20vMDQ2eDR4?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" class="btn btn-outline-primary">Visit</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 Hours ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="Shimla.jpg" class="card-img-top" alt="failed to load">
+                <div class="card-body">
+                    <h4 class="card-title">Shimla: The Queen of Hills</h4>
+                    <p class="card-text">Perched at an altitude of 2,200 meters, Shimla is a charming hill station
+                        that
+                        once
+                        served as the summer capital of British India. Known for its colonial architecture, bustling
+                        bazaars,
+                        and scenic landscapes, Shimla offers a perfect blend of history and natural beauty.</p>
+                    <a href="https://www.google.com/maps/place/Shimla,+Himachal+Pradesh/@31.0782864,77.1178213,13z/data=!3m1!4b1!4m6!3m5!1s0x390578e3e35d6e67:0x1f7e7ff6ff9f54b7!8m2!3d31.104963!4d77.1639874!16zL20vMDJwM215?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" class="btn btn-outline-primary">Visit</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 1 Hours ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="Dharamshala.jpg" class="card-img-top" alt="failed to load">
+                <div class="card-body">
+                    <h4 class="card-title">Dharamshala: The Little Lhasa of India</h4>
+                    <p class="card-text">Nestled in the Kangra Valley, Dharamshala is a serene town that serves as
+                        the
+                        spiritual
+                        and cultural hub of Tibetan Buddhism in India. The town is divided into two parts: Lower
+                        Dharamshala and
+                        McLeod Ganj, home to the Dalai Lama and the Tibetan government-in-exile.</p>
+                    <a href="https://images.unsplash.com/photo-1655469795982-40b85d7faf92?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        target="_blank" class="btn btn-outline-primary">Visit</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 2 Days ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="Ladakh.jpg" class="card-img-top" alt="failed to load">
+                <div class="card-body">
+                    <h4 class="card-title">Leh-Ladakh: The Land of High Passes</h4>
+                    <p class="card-text">A dream destination for adventure lovers, Leh-Ladakh is a high-altitude
+                        desert
+                        known
+                        for its rugged terrain, turquoise lakes, and Buddhist monasteries. It's a paradise for
+                        bikers,
+                        trekkers,
+                        and nature enthusiasts.</p>
+                    <a href="https://www.google.com/maps/place/Leh+Ladakh+Kashmir+-+Travel+Agency/@28.5751682,77.0487743,17z/data=!3m2!4b1!5s0x390d1ade21a224e5:0x4cdaeabf84e32c4e!4m6!3m5!1s0x390d1b5bf38e6a33:0xe5e0b74d0204ea5c!8m2!3d28.5751635!4d77.0513492!16s%2Fg%2F11sy712gqy?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" class="btn btn-outline-primary">Visit</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 10 Hours ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-4 border-top">
+        <div class="row">
+            <div class="col-md-6">
+                <p>© 2025 Yatri.in Inc. <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+            </div>
+            <div class="col-md-6 text-end">
+                <p><a href="#">Back to top</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
