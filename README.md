@@ -17,8 +17,10 @@ You can check out the live version of **Yatri.in** at:
 
 ---
 
-### **Developer 👨‍💻**  
-This project was developed by **Himanshu Singh**.
+Developer 👨‍💻
+
+This project was developed by Himanshu Singh.
+Check out my work on GitHub: Himanshu Singh - GitHub
 
 ---
 
